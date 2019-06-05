@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="check()">
+    <script>
+        let star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus' ];
+        let constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo' ];
+        function check() {
+            let inputStar = prompt("Nhập tên ngôi sao");
+            if (star.indexOf(inputStar)!==-1){
+                document.write("Ngôi sao thuộc chòm "+constellation[star.indexOf(inputStar)]);
+            } else {
+                alert("Không có ngôi sao như vậy!");
+            }
+        }
+    </script>
+</body>
+</html>
